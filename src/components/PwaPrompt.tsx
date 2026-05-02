@@ -13,21 +13,8 @@ interface BeforeInstallPromptEvent extends Event {
 export default function PwaPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showPrompt, setShowPrompt] = useState(false);
-  const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
-    // Check if the user is on iOS
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    const isIosDevice = /iphone|ipad|ipod/.test(userAgent);
-    
-    // Check if already installed (standalone mode)
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || 
-                        (window.navigator as any).standalone === true;
-
-    if (isIosDevice && !isStandalone) {
-      setIsIOS(true);
-      setShowPrompt(true);
-    }
 
     // Capture the beforeinstallprompt event for Android/Chrome
     const handleBeforeInstallPrompt = (e: Event) => {
@@ -87,24 +74,16 @@ export default function PwaPrompt() {
 
         <div className="flex-1">
           <h3 className="font-bold text-slate-900 dark:text-white mb-1">Do you want to install?</h3>
-          {isIOS ? (
-            <p className="text-xs text-slate-600 dark:text-slate-400 leading-tight">
-              Tap the <strong>Share</strong> icon below and select <strong>"Add to Home Screen"</strong> to install this app.
-            </p>
-          ) : (
-            <p className="text-xs text-slate-600 dark:text-slate-400 leading-tight mb-3">
-              Install the Vasectomy Edu app on your device for quick, offline access.
-            </p>
-          )}
+          <p className="text-xs text-slate-600 dark:text-slate-400 leading-tight mb-3">
+            Install the Vasectomy Edu app on your device for quick, offline access.
+          </p>
 
-          {!isIOS && (
-            <button 
-              onClick={handleInstallClick}
-              className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition-colors"
-            >
-              Install App
-            </button>
-          )}
+          <button 
+            onClick={handleInstallClick}
+            className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition-colors"
+          >
+            Install App
+          </button>
         </div>
 
       </div>
