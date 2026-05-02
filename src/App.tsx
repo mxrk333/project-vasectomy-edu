@@ -1,22 +1,33 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Mission from './components/Mission';
-import Features from './components/Features';
-import CallToAction from './components/CallToAction';
+import WhatIs from './components/WhatIs';
+import Myths from './components/Myths';
+import BenefitsSection from './components/BenefitsSection';
+import FAQSection from './components/FAQSection';
+import Research from './components/Research';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PwaPrompt from './components/PwaPrompt';
+import { AppProvider } from './context/AppContext';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-24">
-        <Hero />
-        <Mission />
-        <Features />
-        <CallToAction />
-      </main>
-      <Footer />
-    </>
+    <AppProvider>
+      <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
+        <Navbar />
+        <main>
+          <Hero />
+          <WhatIs />
+          <Myths />
+          <BenefitsSection />
+          <FAQSection />
+          <Research />
+          <Contact />
+        </main>
+        <Footer />
+        <PwaPrompt />
+      </div>
+    </AppProvider>
   );
 }
 

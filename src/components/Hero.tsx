@@ -1,35 +1,46 @@
+import heroImage from '../assets/hero-new.png';
+import { useAppContext } from '../context/AppContext';
+
 export default function Hero() {
+  const { t: allT } = useAppContext();
+  const t = allT.hero;
+
   return (
-    <section className="relative min-h-[819px] flex items-center justify-center px-8 overflow-hidden">
-      {/* Abstract 3D Accents */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
-      
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-        <div className="space-y-8">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest">
-            Modern Family Planning
+    <section id="home" className="min-h-screen flex items-center pt-20 pb-16 px-6 bg-white dark:bg-slate-950 transition-colors">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+          <div className="space-y-6">
+            <p className="text-blue-600 dark:text-blue-400 text-sm font-bold tracking-wide uppercase">
+              {t.badge}
+            </p>
+
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+              {t.title}
+            </h1>
+
+            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-lg">
+              {t.subtitle}
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a href="#whatis" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">
+                {t.primaryBtn}
+              </a>
+              <a href="#contact" className="px-8 py-3 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors">
+                {t.secondaryBtn}
+              </a>
+            </div>
           </div>
-          <h1 className="font-headline-xl text-headline-xl text-on-background">
-            Empowering Choices for Modern Families
-          </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-            A brief, friendly introduction to vasectomy as a safe, effective, and permanent family planning option. We're here to help you navigate this choice with clinical precision and human empathy.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 bg-primary-container text-on-primary-container font-headline-md rounded-xl hover:scale-105 transition-transform shadow-ambient">
-              Get Started
-            </button>
-            <button className="px-8 py-4 border-2 border-primary text-primary font-headline-md rounded-xl hover:bg-primary-fixed transition-colors">
-              Learn More
-            </button>
+
+          <div className="hidden lg:block">
+            <img
+              src={heroImage}
+              alt="Happy Filipino couple"
+              className="w-full max-w-md mx-auto rounded-2xl shadow-lg"
+            />
           </div>
-        </div>
-        
-        <div className="relative">
-          <div className="rounded-3xl overflow-hidden shadow-ambient glass-card p-4">
-            <img className="w-full h-auto rounded-2xl object-cover aspect-[4/3]" alt="A warm, professional healthcare setting featuring a friendly female doctor talking reassuringly to a smiling Filipino couple." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPY-0VnPjaT1MPPwu0vnonQcixNtq6N4IxFqV0f-vBXfReKcKy9jvFSF87eFGkvqMlI2DjpjE6yFZoAnCFevoGuc3ElivUEvp0pWG-_jvSk1CdAGZ-KIkBPwYP6MGKL5ePSuwTWmOtveerovkmsJti9en-fdtXjPScQfPYlHNx2BFDpl-oC_6iFvPT-R5S09ooEjfU6f7VV4f2thq1kzthe8vjeUvTEoSCm-KTIGZMgM5smiouC8bk1DMl-Qpk2Wjgl5pJikP70Vg"/>
-          </div>
+
         </div>
       </div>
     </section>
