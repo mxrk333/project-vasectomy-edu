@@ -153,7 +153,7 @@ export const translations = {
     footer: {
       tagline: 'Tamang kaalaman para sa mas matatag na pamilya.',
       links: ['Ano ang Vasectomy?', 'Myths vs Facts', 'Mga Benepisyo', 'FAQ', 'Research'],
-      copyright: '© 2024 Cutting Ties, Keeping Love. Lahat ng karapatan ay nakalaan.'
+      copyright: '© 2026 Cutting Ties, Keeping Love. Lahat ng karapatan ay nakalaan.'
     }
   },
   EN: {
@@ -310,7 +310,7 @@ export const translations = {
     footer: {
       tagline: 'The right knowledge for a stronger family.',
       links: ['What is Vasectomy?', 'Myths vs Facts', 'Benefits', 'FAQ', 'Research'],
-      copyright: '© 2024 Cutting Ties, Keeping Love. All rights reserved.'
+      copyright: '© 2026 Cutting Ties, Keeping Love. All rights reserved.'
     }
   }
 };
