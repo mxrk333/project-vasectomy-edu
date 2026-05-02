@@ -81,7 +81,7 @@ export default function Contact() {
               </div>
             ) : (
               <form
-                action="https://formsubmit.co/ajax/markpatigayon440@gmail.com"
+                action="https://formsubmit.co/ajax/chinaldea67@gmail.com"
                 method="POST"
                 onSubmit={handleSubmit}
                 className="space-y-4"
