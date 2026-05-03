@@ -216,11 +216,6 @@ export const translations = {
         { value: '<1%', label: 'Risk ng Komplikasyon' }
       ],
       source: 'Pinagmulan: World Health Organization (WHO), Philippine DOH Family Planning Guidelines',
-      resourcesTitle: 'Opisyal na Resources (Downloadable)',
-      resources: [
-        { title: 'Vasectomy Anatomy Poster (PDF)', size: '0.1 MB', downloadName: 'Vasectomy_Anatomy_Poster.pdf' },
-        { title: 'DOH Family Planning Clinical Standards (PDF)', size: '8.3 MB', downloadName: 'DOH_Family_Planning_Standards_2014.pdf' }
-      ],
       findings: {
         sectionTitle: 'Buod ng mga Natuklasan ng Pag-aaral',
         sectionSubtitle: 'Mga resulta mula sa pananaliksik na isinagawa ng mga Nursing students ng Olivarez College.',
@@ -516,11 +511,6 @@ export const translations = {
         { value: '<1%', label: 'Complication Risk' }
       ],
       source: 'Sources: World Health Organization (WHO), Philippine DOH Family Planning Guidelines',
-      resourcesTitle: 'Official Resources (Downloadable)',
-      resources: [
-        { title: 'Vasectomy Anatomy Poster (PDF)', size: '0.1 MB', downloadName: 'Vasectomy_Anatomy_Poster.pdf' },
-        { title: 'DOH Family Planning Clinical Standards (PDF)', size: '8.3 MB', downloadName: 'DOH_Family_Planning_Standards_2014.pdf' }
-      ],
       findings: {
         sectionTitle: 'Summary of Research Findings',
         sectionSubtitle: 'Results from the study conducted by Olivarez College Nursing students.',
