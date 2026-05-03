@@ -4,7 +4,7 @@ import howWorksImg from '../assets/vasectomy-how-works.png';
 import procedureImg from '../assets/vasectomy-procedure.png';
 
 export default function WhatIs() {
-  const { t: allT } = useAppContext();
+  const { t: allT, setReferencesModalOpen } = useAppContext();
   const t = allT.whatis;
 
   return (
@@ -141,9 +141,28 @@ export default function WhatIs() {
           </div>
 
           {/* References */}
-          <p className="text-xs text-slate-400 dark:text-slate-500 text-center">
-            {t.references}
-          </p>
+          {t.references && t.references.length > 0 && (
+            <div className="pt-4 border-t border-slate-200 dark:border-slate-800 mt-8 max-w-4xl mx-auto">
+              <div className="flex justify-center mb-3">
+                <button 
+                  onClick={() => setReferencesModalOpen(true)}
+                  className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider hover:underline flex items-center gap-1 transition-colors bg-blue-50 dark:bg-blue-900/30 px-3 py-1.5 rounded-full"
+                >
+                  <span className="material-symbols-outlined text-[14px]">library_books</span>
+                  {allT.hero.badge === 'Cutting Ties, Keeping Love' ? 'Tingnan Lahat ng Sanggunian' : 'View All References'}
+                </button>
+              </div>
+              <ul className="text-xs text-slate-400 dark:text-slate-500 flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+                {t.references.map((ref: { text: string; url: string }, i: number) => (
+                  <li key={i}>
+                    <a href={ref.url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 hover:underline transition-colors">
+                      {ref.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
       </div>

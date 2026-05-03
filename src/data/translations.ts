@@ -25,7 +25,18 @@ export const translations = {
       ],
       closingStatement: 'Bilang mga hinaharap na healthcare professionals, kami ay katuwang ninyo sa pagtataguyod ng responsableng pagpaplano ng pamilya. Tara, alamin ang katotohanan tungkol sa vasectomy!',
       primaryBtn: 'Alamin Pa',
-      secondaryBtn: 'Makipag-ugnayan'
+      secondaryBtn: 'Makipag-ugnayan',
+      purpose: {
+        title: 'PURPOSE',
+        q1: 'Para saan ang website na ito?',
+        a1: 'Ang website na ito ay nilikha bilang isang platapormang pang-edukasyon na naglalayong magbigay ng maaasahan, batay sa ebidensya, at madaling maunawaang impormasyon tungkol sa vasectomy. Layunin nitong itama ang mga maling paniniwala, pataasin ang kamalayan, at hikayatin ang aktibong pakikilahok ng kalalakihan sa pagpaplano ng pamilya.',
+        q2: 'Para kanino ang website na ito?',
+        a2: [
+          'Mga mag-asawang mag-partner',
+          'Mga indibidwal na naghahanap ng impormasyon tungkol sa family planning',
+          'Mga estudyante at mga tagapagturo sa larangan ng kalusugan'
+        ]
+      }
     },
     overview: {
       overviewTitle: 'Overview of Vasectomy Awareness',
@@ -76,24 +87,57 @@ export const translations = {
         'Permanente: Siguraduhin ang desisyon dahil ito ay para sa pangmatagalang epekto.',
         'Ligtas na Pakikipagtalik: Gumamit pa rin ng proteksyon upang maiwasan ang mga STIs.'
       ],
-      references: 'Pinagmulan: WHO, WebMD, Mayo Clinic, Philippine DOH'
+      references: [
+        { text: 'Non-Scalpel Vasectomy (NCBI)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6464377/' },
+        { text: 'Vasectomy Overview (WebMD)', url: 'https://www.webmd.com/sex/birth-control/vasectomy-overview' },
+        { text: 'Vasectomy (Mayo Clinic)', url: 'https://www.mayoclinic.org/tests-procedures/vasectomy/about/pac-20384580' }
+      ]
     },
     myths: {
-      title: 'Myths vs Facts',
-      subtitle: 'Iwasan ang maling impormasyon. Narito ang katotohanan.',
+      title: 'Mga Mito (Myths) vs. Katotohanan (Facts)',
+      subtitle: 'Ang mga maling impormasyon tungkol sa vasectomy ay madalas na nagdudulot ng hindi kinakailangang takot. Narito ang buod ng mga pinakakaraniwang mito at ang mga katotohanang nakabatay sa ebidensya.',
       items: [
         {
-          myth: '"Magdudulot ng impotence ang vasectomy."',
-          fact: 'Hindi totoo. Ang vasectomy ay hindi nakakaapekto sa kakayahan mong makipagtalik.'
+          myth: 'Masakit ang vasectomy',
+          fact: 'Ang mga modernong teknik, lalo na ang no-scalpel method, ay hindi gaanong mapanakit. Gumagamit ng local anesthesia, at karamihan sa mga pasyente ay nakararanas lamang ng kaunting discomfort habang at pagkatapos ng operasyon.'
         },
         {
-          myth: '"Mababawasan ang pagkalalaki ko."',
-          fact: 'Hindi totoo. Ang testosterone levels mo ay mananatiling normal. Wala itong epekto sa boses, muscles, o itsura.'
+          myth: 'Naaapektuhan nito ang sexual performance',
+          fact: 'Hindi naaapektuhan ng vasectomy ang testosterone levels, libido (pagkakasabik), erections, o pangkalahatang kakayahang sekswal. Ang tanging nagbabago ay ang kawalan ng sperm sa semilya.'
         },
         {
-          myth: '"Hihina ang performance ko sa kama."',
-          fact: 'Hindi totoo. Maraming mag-asawa ang nagsasabing mas naging masaya pa ang kanilang pagsasama.'
+          myth: 'Epektibo agad ang vasectomy pagkatapos ng operasyon',
+          fact: 'Hindi ito instant. Maaaring may matira pang sperm sa daluyan sa loob ng ilang linggo o ilang labas. Kailangan pa ring gumamit ng ibang kontrasepsyon hanggang makumpirma na zero na ang sperm count.'
+        },
+        {
+          myth: 'Madali itong bawiin o ipabalik (reversible)',
+          fact: 'Bagama\'t may mga operasyon para rito (reversal), ito ay kumplikado, mahal, at hindi laging nagtatagumpay. Dapat itong ituring na permanenteng paraan ng kontrasepsyon.'
+        },
+        {
+          myth: 'Nagdaragdag ito ng panganib sa kalusugan',
+          fact: 'Walang napatunayang koneksyon ang vasectomy sa malulubhang sakit gaya ng prostate cancer, sakit sa puso, o pagbabago sa hormones. Ito ay isang ligtas na prosedur.'
+        },
+        {
+          myth: 'Ito ay kumplikado at high-risk na operasyon',
+          fact: 'Ang vasectomy ay isang simpleng outpatient procedure na tumatagal lamang ng 15–30 minuto. Mas mabilis itong gawin at mas kaunti ang panganib kumpara sa pagpapatali ng babae.'
+        },
+        {
+          myth: 'Matagal ang recovery time',
+          fact: 'Mabilis ang paggaling. Karamihan sa mga pasyente ay bumabalik sa normal na gawain sa loob lamang ng ilang araw.'
+        },
+        {
+          myth: 'Nawawala ang ejaculation o nagbabago ang semilya',
+          fact: 'Tuloy pa rin ang normal na paglabas. Ang hitsura ng semilya ay mananatiling pareho; ang tanging wala ay ang sperm na hindi nakikita ng mata.'
+        },
+        {
+          myth: 'Hindi epektibo ang vasectomy',
+          fact: 'Ito ay isa sa mga pinaka-epektibong kontrasepsyon sa mundo, na may success rate na higit sa 99% kapag nakumpirma na ng follow-up testing.'
         }
+      ],
+      references: [
+        { text: 'Afshar, A. (2025). Vasectomy myths vs. facts.', url: 'https://www.losangelesurology.com/blog/vasectomy-myths-and-facts-what-every-man-should-know/' },
+        { text: 'Lesani, A. Myths and facts about vasectomy.', url: 'https://www.drlesani.com/blog/myths-and-facts-about-vasectomy' },
+        { text: 'Northwestern Medicine. (2025). Surprising facts about vasectomies.', url: 'https://www.nm.org/healthbeat/healthy-tips/Surprising-Facts-About-Vasectomies' }
       ]
     },
     benefits: {
@@ -101,23 +145,23 @@ export const translations = {
       items: [
         {
           icon: 'health_and_safety',
-          title: 'Ligtas at Simpleng Procedure',
-          desc: 'Minor operation lang ito. 2–3 araw na pahinga at balik na sa trabaho.'
-        },
-        {
-          icon: 'savings',
-          title: 'Matipid sa Pamilya',
-          desc: 'Isang beses lang ang gastos — mas mura kaysa sa buwanang pills o injection.'
+          title: 'Ligtas at Simpleng Prosedur',
+          desc: 'Minor operation lang ito na may mabilis na paggaling.'
         },
         {
           icon: 'verified',
-          title: '99.9% Effective',
-          desc: 'Pinaka-mataas na effectivity rate sa lahat ng family planning methods.'
+          title: 'Epektibong Kontrasepsyon para sa Mahabang Panahon',
+          desc: 'Pangmatagalang solusyon upang maiwasan ang hindi inaasahang pagbubuntis.'
+        },
+        {
+          icon: 'savings',
+          title: 'Cost-efficient (Makatitipid)',
+          desc: 'Isang beses lang ang gastos kumpara sa paulit-ulit na pagbili ng ibang contraceptives.'
         },
         {
           icon: 'volunteer_activism',
-          title: 'Pagmamahal sa Asawa',
-          desc: 'Paraan ng pagpapakita ng suporta at pakikiisa sa family planning.'
+          title: 'Pakikibahagi sa Responsibilidad sa Pagpaplano ng Pamilya',
+          desc: 'Nagpapakita ng malasakit at pagtutulungan ng mag-asawa.'
         }
       ]
     },
@@ -148,16 +192,27 @@ export const translations = {
       ]
     },
     askMidwife: {
-      title: 'Itanong sa Midwife',
-      subtitle: 'Mga karaniwang tanong na sinasagot ng aming mga midwife at health professionals.',
+      title: 'Mga Madalas Itanong (FAQs)',
+      subtitle: 'Mga karaniwang tanong na sinasagot ng aming mga health professionals.',
       items: [
-        { q: 'Masakit ba ang vasectomy?', a: 'Halos wala. Gagamit ng local anesthesia kaya hindi mo mararamdaman ang procedure.' },
-        { q: 'Permanent ba ito?', a: 'Oo, ang vasectomy ay itinuturing na permanenteng paraan ng family planning.' },
-        { q: 'Gaano katagal ang recovery?', a: '2–3 araw na pahinga lang ang kailangan. Pagkatapos nito, pwede nang bumalik sa normal na gawain.' },
-        { q: 'Pwede pa ba akong makipag-sex?', a: 'Oo! Walang pagbabago sa pakiramdam, sex drive, o performance.' },
-        { q: 'May side effects ba?', a: 'Minimal lang. Kaunting pamamaga o pananakit na mawawala sa loob ng ilang araw.' },
-        { q: 'Libre ba ito sa health center?', a: 'Oo, ang vasectomy ay libre sa mga Barangay Health Center sa ilalim ng Family Planning program ng DOH.' }
-      ]
+        { 
+          q: 'Masakit ba ito?', 
+          a: 'Ang vasectomy ay isinasagawa gamit ang local anesthesia, kaya wala kang mararamdamang sakit habang ginagawa ang operasyon. Ang ilang pasyente ay maaaring makaramdam lamang ng bahagyang paghatak o pakiramdam na may gumagalaw sa bahaging iyon.\n\nPagkatapos ng prosedur, kapag nawala na ang bisa ng anesthesia, karamihan sa mga pasyente ay nakararanas ng banayad hanggang katamtamang hapdi o sakit. Karaniwan itong nakokontrol sa pamamagitan ng pag-inom ng pain reliever, sapat na pahinga, at paglalagay ng ice pack. Ang matinding sakit ay hindi karaniwang nangyayari.' 
+        },
+        { 
+          q: 'Permanente ba ito?', 
+          a: 'Oo, ang vasectomy ay itinuturing na isang permanenteng paraan ng kontrasepsyon para sa mga lalaki. Idinisenyo ito upang habambuhay na harangan ang paghalok ng punla (sperm) sa semilya.\n\nBagama\'t mayroong prosedur para sa pagbabalik nito (vasectomy reversal), hindi ito laging nagtatagumpay at walang garantiya na maibabalik ang pagiging mayabong. Dahil dito, ang vasectomy ay dapat lamang piliin kung ikaw ay sigurado na sa iyong desisyon na huwag nang magkaanak.' 
+        },
+        { 
+          q: 'Gaano katagal ang paggaling?', 
+          a: 'Karamihan sa mga indibidwal ay ganap na nakarerecover sa loob ng 8 hanggang 10 araw. Gayunpaman, maaari nang balikan ang mga madadaling gawain o light activities sa loob lamang ng 48 hanggang 72 oras matapos ang prosedur.' 
+        },
+        { 
+          q: 'Maaari pa ba akong makipagtalik pagkatapos ng vasectomy?', 
+          a: 'Oo, maaaring magpatuloy sa pakikipagtalik kapag magaling na ang mga hiwa, ngunit hindi ito agad-agad. Dapat iwasan ang lahat ng uri ng gawaing sekswal, kabilang ang masturbasyon, sa loob ng hindi bababa sa 7 araw pagkatapos ng operasyon.\n\nGayunpaman, napakahalagang tandaan ang mga sumusunod:\n• Hindi ka agad baog pagkatapos ng vasectomy: Maaaring may matira pang punla (sperm) sa iyong semilya sa loob ng ilang linggo o buwan.\n• Kailangang gumamit ng ibang paraan ng kontrasepsyon: Gumamit muna ng condom o ibang proteksyon hanggang sa makumpirma ng semen analysis na wala na talagang sperm na matatagpuan sa iyong semilya.\n• Walang pagbabago sa karanasan: Kapag nakumpirma nang "clear" ang iyong semilya, ang vasectomy ay hindi makakaapekto sa iyong sexual performance, libido (pagpukaw ng tawag ng laman), ereksyon, o paglabas ng semilya (ejaculation). Ang tanging magbabago ay ang kawalan ng sperm sa iyong semilya.' 
+        }
+      ],
+      reference: 'Reference: https://my.clevelandclinic.org/health/procedures/4423-vasectomy'
     },
     research: {
       title: 'Research at Datos',
@@ -170,8 +225,8 @@ export const translations = {
       source: 'Pinagmulan: World Health Organization (WHO), Philippine DOH Family Planning Guidelines',
       resourcesTitle: 'Opisyal na Resources (Downloadable)',
       resources: [
-        { title: 'Gabay sa Family Planning (PDF)', size: '2.4 MB', link: '/dummy-brochure.pdf' },
-        { title: 'FAQs Tungkol sa Vasectomy (PDF)', size: '1.1 MB', link: '/dummy-faq.pdf' }
+        { title: 'Vasectomy Anatomy Poster (PDF)', size: '0.1 MB', downloadName: 'Vasectomy_Anatomy_Poster.pdf' },
+        { title: 'DOH Family Planning Clinical Standards (PDF)', size: '8.3 MB', downloadName: 'DOH_Family_Planning_Standards_2014.pdf' }
       ]
     },
     contact: {
@@ -196,8 +251,18 @@ export const translations = {
     },
     footer: {
       tagline: 'Planadong Pamilya, Masaganang Bukas Ang Kasama.',
-      links: ['Ano ang Vasectomy?', 'Myths vs Facts', 'Mga Benepisyo', 'FAQ', 'Research'],
-      copyright: '© 2026 Cutting Ties, Keeping Love. Lahat ng karapatan ay nakalaan.'
+      links: ['Ano ang Vasectomy?', 'Myths vs Facts', 'Mga Benepisyo', 'FAQ', 'Research', 'References'],
+      copyright: '© 2026 Cutting Ties, Keeping Love. Lahat ng karapatan ay nakalaan.',
+      referencesModalTitle: 'Lahat ng Sanggunian (References)',
+      allReferences: [
+        { text: 'Afshar, A. (2025, April 16). Vasectomy myths vs. facts: What men in Los Angeles need to know. Los Angeles Urology.', url: 'https://www.losangelesurology.com/blog/vasectomy-myths-and-facts-what-every-man-should-know/' },
+        { text: 'Lesani, A. (n.d.). Myths and facts about vasectomy. Dr. Lesani.', url: 'https://www.drlesani.com/blog/myths-and-facts-about-vasectomy' },
+        { text: 'Northwestern Medicine. (2025, June). Surprising facts about vasectomies.', url: 'https://www.nm.org/healthbeat/healthy-tips/Surprising-Facts-About-Vasectomies' },
+        { text: 'Vasectomy Overview (WebMD)', url: 'https://www.webmd.com/sex/birth-control/vasectomy-overview' },
+        { text: 'Vasectomy (Mayo Clinic)', url: 'https://www.mayoclinic.org/tests-procedures/vasectomy/about/pac-20384580' },
+        { text: 'Non-Scalpel Vasectomy (NCBI)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6464377/' },
+        { text: 'Vasectomy Procedure (Cleveland Clinic)', url: 'https://my.clevelandclinic.org/health/procedures/4423-vasectomy' }
+      ]
     }
   },
   EN: {
@@ -226,7 +291,18 @@ export const translations = {
       ],
       closingStatement: 'As future healthcare professionals, we are committed to advancing public awareness and supporting responsible reproductive health choices through reliable and accessible educational resources. We invite you to explore this site and learn more about vasectomy as part of comprehensive family planning and men\'s reproductive health.',
       primaryBtn: 'Learn More',
-      secondaryBtn: 'Contact Us'
+      secondaryBtn: 'Contact Us',
+      purpose: {
+        title: 'PURPOSE',
+        q1: 'What is the website for?',
+        a1: 'The website is created as an educational platform that provides reliable, evidence-based, and easy-to-understand information about vasectomy. It aims to correct misconceptions, increase awareness, and promote male involvement in family planning.',
+        q2: 'Who is it for?',
+        a2: [
+          'Married couples / partners',
+          'Individuals seeking family planning information',
+          'Students and healthcare educators'
+        ]
+      }
     },
     overview: {
       overviewTitle: 'Overview of Vasectomy Awareness',
@@ -277,24 +353,57 @@ export const translations = {
         'Permanent: Ensure your decision as this is designed for long-term effect.',
         'Safe Sex: Continue using protection (e.g., condoms) to prevent STIs.'
       ],
-      references: 'Sources: WHO, WebMD, Mayo Clinic, Philippine DOH'
+      references: [
+        { text: 'Non-Scalpel Vasectomy (NCBI)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6464377/' },
+        { text: 'Vasectomy Overview (WebMD)', url: 'https://www.webmd.com/sex/birth-control/vasectomy-overview' },
+        { text: 'Vasectomy (Mayo Clinic)', url: 'https://www.mayoclinic.org/tests-procedures/vasectomy/about/pac-20384580' }
+      ]
     },
     myths: {
-      title: 'Myths vs Facts',
-      subtitle: 'Don\'t believe the misconceptions. Here are the facts.',
+      title: 'Myths vs. Facts',
+      subtitle: 'Misinformation surrounding vasectomy often leads to unnecessary fear and hesitation. Here are the most common myths and evidence-based facts.',
       items: [
         {
-          myth: '"Vasectomy causes impotence."',
-          fact: 'Not true. Vasectomy does not affect your ability to have sex.'
+          myth: 'Vasectomy is painful',
+          fact: 'Modern techniques, particularly the no-scalpel method, are minimally invasive and generally cause little to no pain. Local anesthesia is used, and most experience only mild discomfort.'
         },
         {
-          myth: '"It will reduce my masculinity."',
-          fact: 'Not true. Your testosterone levels stay the same. No effect on voice, muscles, or appearance.'
+          myth: 'Vasectomy affects sexual performance',
+          fact: 'Vasectomy does not affect testosterone levels, libido, erections, or overall sexual function. The only change is the absence of sperm in the semen.'
         },
         {
-          myth: '"My sexual performance will decline."',
-          fact: 'Not true. Many couples report an even better relationship after the procedure.'
+          myth: 'Vasectomy is immediately effective',
+          fact: 'It does not provide instant contraception. Sperm may remain in the tract for several weeks. Alternative contraception is required until testing confirms a zero sperm count.'
+        },
+        {
+          myth: 'Vasectomy is easily reversible',
+          fact: 'While reversal procedures exist, they are complex, costly, and not always successful. Vasectomy should be considered a permanent method of contraception.'
+        },
+        {
+          myth: 'Vasectomy increases health risks',
+          fact: 'There is no proven association between vasectomy and serious health conditions like prostate cancer, heart disease, or hormonal changes. It is safe and low-risk.'
+        },
+        {
+          myth: 'Vasectomy is a complicated and high-risk procedure',
+          fact: 'It is a simple outpatient procedure that typically takes 15–30 minutes. It is less invasive and carries fewer risks compared to female sterilization procedures.'
+        },
+        {
+          myth: 'Vasectomy requires long recovery time',
+          fact: 'Recovery is generally quick. Most patients resume normal activities within a few days, with minimal downtime required.'
+        },
+        {
+          myth: 'Vasectomy prevents ejaculation or changes semen',
+          fact: 'Ejaculation continues normally after vasectomy. Semen appears the same; only the sperm component is absent.'
+        },
+        {
+          myth: 'Vasectomy is not effective',
+          fact: 'Vasectomy is one of the most effective forms of contraception, with a success rate exceeding 99% once confirmed by follow-up testing.'
         }
+      ],
+      references: [
+        { text: 'Afshar, A. (2025). Vasectomy myths vs. facts.', url: 'https://www.losangelesurology.com/blog/vasectomy-myths-and-facts-what-every-man-should-know/' },
+        { text: 'Lesani, A. Myths and facts about vasectomy.', url: 'https://www.drlesani.com/blog/myths-and-facts-about-vasectomy' },
+        { text: 'Northwestern Medicine. (2025). Surprising facts about vasectomies.', url: 'https://www.nm.org/healthbeat/healthy-tips/Surprising-Facts-About-Vasectomies' }
       ]
     },
     benefits: {
@@ -302,23 +411,23 @@ export const translations = {
       items: [
         {
           icon: 'health_and_safety',
-          title: 'Safe and Simple Procedure',
-          desc: 'It\'s a minor operation. Just 2–3 days of rest and you\'re back to work.'
-        },
-        {
-          icon: 'savings',
-          title: 'Cost-Efficient for Families',
-          desc: 'One-time cost — much cheaper than monthly pills or injections.'
+          title: 'Safe and simple procedure',
+          desc: 'A minor operation with a quick recovery time.'
         },
         {
           icon: 'verified',
-          title: '99.9% Effective',
-          desc: 'The highest effectivity rate among all family planning methods.'
+          title: 'Effective long-term contraception',
+          desc: 'A permanent solution to prevent unintended pregnancies.'
+        },
+        {
+          icon: 'savings',
+          title: 'Cost-efficient',
+          desc: 'A one-time cost compared to recurring expenses of other contraceptives.'
         },
         {
           icon: 'volunteer_activism',
-          title: 'Shared Responsibility',
-          desc: 'A meaningful way to share the family planning responsibility with your partner.'
+          title: 'Shared family planning responsibility',
+          desc: 'Shows care and partnership between couples.'
         }
       ]
     },
@@ -349,16 +458,27 @@ export const translations = {
       ]
     },
     askMidwife: {
-      title: 'Ask a Midwife',
-      subtitle: 'Common questions answered by our midwives and health professionals.',
+      title: 'Frequently Asked Questions (FAQs)',
+      subtitle: 'Common questions answered by our health professionals.',
       items: [
-        { q: 'Is vasectomy painful?', a: 'Almost painless. Local anesthesia is used so you won\'t feel the procedure.' },
-        { q: 'Is it permanent?', a: 'Yes, vasectomy is considered a permanent method of family planning.' },
-        { q: 'How long is recovery?', a: 'Only 2–3 days of rest. After that, you can go back to your normal activities.' },
-        { q: 'Can I still have sex?', a: 'Yes! There is no change in sensation, sex drive, or performance.' },
-        { q: 'Are there side effects?', a: 'Minimal. Some slight swelling or soreness that goes away in a few days.' },
-        { q: 'Is it free at the health center?', a: 'Yes, vasectomy is free at Barangay Health Centers under the DOH Family Planning program.' }
-      ]
+        { 
+          q: 'Is it painful?', 
+          a: 'A vasectomy is performed using local anesthesia, so you will not feel pain during the procedure. Some patients may feel a slight tugging or movement sensation.\n\nAfter the procedure, once the anesthesia wears off, most people experience mild to moderate discomfort or pain, which can usually be managed with pain relievers, rest, and ice packs. Severe pain is uncommon.' 
+        },
+        { 
+          q: 'Is it permanent?', 
+          a: 'Yes, a vasectomy is considered a permanent form of male contraception. It is designed to permanently block sperm from entering the semen.\n\nAlthough a reversal procedure exists, it is not always successful and is not guaranteed, so vasectomy should be considered permanent.' 
+        },
+        { 
+          q: 'How long is recovery?', 
+          a: 'Most individuals experience full recovery in about 8 to 10 days. However, light activities can usually be resumed within 48 to 72 hours after the procedure.' 
+        },
+        { 
+          q: 'Can I still have sex after vasectomy?', 
+          a: 'Yes, sexual activity can be resumed after healing, but not immediately. You should avoid all sexual activity, including masturbation, for at least 7 days after the procedure.\n\nHowever, it is very important to note:\n• You are not immediately sterile after vasectomy\n• Sperm may still remain in the semen for weeks to months\n• You must use another form of contraception until a semen analysis confirms there is no sperm present\n• Once cleared, vasectomy does not affect sexual performance, libido, erection, or ejaculation, only the presence of sperm in semen changes.' 
+        }
+      ],
+      reference: 'Reference: https://my.clevelandclinic.org/health/procedures/4423-vasectomy'
     },
     research: {
       title: 'Research & Data',
@@ -371,8 +491,8 @@ export const translations = {
       source: 'Sources: World Health Organization (WHO), Philippine DOH Family Planning Guidelines',
       resourcesTitle: 'Official Resources (Downloadable)',
       resources: [
-        { title: 'Family Planning Guide (PDF)', size: '2.4 MB', link: '/dummy-brochure.pdf' },
-        { title: 'Vasectomy FAQs (PDF)', size: '1.1 MB', link: '/dummy-faq.pdf' }
+        { title: 'Vasectomy Anatomy Poster (PDF)', size: '0.1 MB', downloadName: 'Vasectomy_Anatomy_Poster.pdf' },
+        { title: 'DOH Family Planning Clinical Standards (PDF)', size: '8.3 MB', downloadName: 'DOH_Family_Planning_Standards_2014.pdf' }
       ]
     },
     contact: {
@@ -397,8 +517,18 @@ export const translations = {
     },
     footer: {
       tagline: 'Planned Family, A Prosperous Future Together.',
-      links: ['What is Vasectomy?', 'Myths vs Facts', 'Benefits', 'FAQ', 'Research'],
-      copyright: '© 2026 Cutting Ties, Keeping Love. All rights reserved.'
+      links: ['What is Vasectomy?', 'Myths vs Facts', 'Benefits', 'FAQ', 'Research', 'References'],
+      copyright: '© 2026 Cutting Ties, Keeping Love. All rights reserved.',
+      referencesModalTitle: 'All References',
+      allReferences: [
+        { text: 'Afshar, A. (2025, April 16). Vasectomy myths vs. facts: What men in Los Angeles need to know. Los Angeles Urology.', url: 'https://www.losangelesurology.com/blog/vasectomy-myths-and-facts-what-every-man-should-know/' },
+        { text: 'Lesani, A. (n.d.). Myths and facts about vasectomy. Dr. Lesani.', url: 'https://www.drlesani.com/blog/myths-and-facts-about-vasectomy' },
+        { text: 'Northwestern Medicine. (2025, June). Surprising facts about vasectomies.', url: 'https://www.nm.org/healthbeat/healthy-tips/Surprising-Facts-About-Vasectomies' },
+        { text: 'Vasectomy Overview (WebMD)', url: 'https://www.webmd.com/sex/birth-control/vasectomy-overview' },
+        { text: 'Vasectomy (Mayo Clinic)', url: 'https://www.mayoclinic.org/tests-procedures/vasectomy/about/pac-20384580' },
+        { text: 'Non-Scalpel Vasectomy (NCBI)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6464377/' },
+        { text: 'Vasectomy Procedure (Cleveland Clinic)', url: 'https://my.clevelandclinic.org/health/procedures/4423-vasectomy' }
+      ]
     }
   }
 };

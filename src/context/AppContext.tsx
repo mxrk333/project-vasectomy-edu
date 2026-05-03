@@ -13,6 +13,8 @@ interface AppContextType {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
   t: typeof translations.TL;
+  isReferencesModalOpen: boolean;
+  setReferencesModalOpen: (isOpen: boolean) => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -56,6 +58,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const t = translations[language];
 
+  const [isReferencesModalOpen, setReferencesModalOpen] = useState(false);
+
   return (
     <AppContext.Provider value={{ 
       language, 
@@ -64,7 +68,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       toggleTheme, 
       searchQuery, 
       setSearchQuery,
-      t
+      t,
+      isReferencesModalOpen,
+      setReferencesModalOpen
     }}>
       {children}
     </AppContext.Provider>

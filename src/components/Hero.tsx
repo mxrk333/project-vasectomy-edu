@@ -6,7 +6,7 @@ export default function Hero() {
   const t = allT.hero;
 
   return (
-    <section id="home" className="h-screen flex items-center pt-20 px-6 bg-white dark:bg-slate-950 transition-colors overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center py-24 px-6 bg-white dark:bg-slate-950 transition-colors overflow-x-hidden">
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
@@ -66,6 +66,32 @@ export default function Hero() {
           </div>
 
         </div>
+
+        {/* Purpose Section */}
+        {t.purpose && (
+          <div className="mt-16 md:mt-20 pt-8 md:pt-12 border-t border-slate-200 dark:border-slate-800 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-3">
+              <p className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+                {t.purpose.title}
+              </p>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white">{t.purpose.q1}</h3>
+              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                {t.purpose.a1}
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white md:mt-7">{t.purpose.q2}</h3>
+              <ul className="space-y-2">
+                {t.purpose.a2.map((item: string, i: number) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                    <span className="material-symbols-outlined text-blue-500 text-[18px] mt-0.5 shrink-0">check_circle</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

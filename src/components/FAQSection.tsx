@@ -8,7 +8,7 @@ interface Message {
 }
 
 export default function FAQSection() {
-  const { t: allT, language } = useAppContext();
+  const { t: allT, language, setReferencesModalOpen } = useAppContext();
   const t = allT.askMidwife;
   const [messages, setMessages] = useState<Message[]>([
     { from: 'midwife', text: language === 'TL' ? 'Kumusta! Ako ang inyong Midwife Assistant. Magtanong lang kayo tungkol sa vasectomy. (Halimbawa: sakit, recovery, side effects, o gastos)' : 'Hello! I\'m your Midwife Assistant. Feel free to ask me anything about vasectomy. (e.g., pain, recovery, side effects, or cost)' }
@@ -42,11 +42,7 @@ export default function FAQSection() {
       // 2: Recovery
       { tl: ['pahinga', 'gaano katagal'], en: ['how long', 'heal'], shared: ['recovery', 'recover', 'rest'] },
       // 3: Sex
-      { tl: ['makipag-sex', 'kama'], en: ['intercourse', 'drive', 'performance'], shared: ['sex', 'libido'] },
-      // 4: Side effects
-      { tl: ['epekto'], en: ['risk', 'danger'], shared: ['side effect', 'effect', 'side'] },
-      // 5: Free/Cost
-      { tl: ['libre', 'magkano', 'bayad'], en: ['free', 'cost', 'price'], shared: ['health center'] },
+      { tl: ['makipag-sex', 'kama'], en: ['intercourse', 'drive', 'performance'], shared: ['sex', 'libido'] }
     ];
 
     for (let i = 0; i < keywords.length; i++) {
@@ -109,32 +105,54 @@ export default function FAQSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
           {/* FAQ Accordion */}
-          <div className="space-y-3">
-            {t.items.map((item, i) => (
-              <div
-                key={i}
-                className={`rounded-xl border transition-colors ${
-                  openFaq === i
-                    ? 'bg-white dark:bg-slate-900 border-blue-200 dark:border-blue-800'
-                    : 'bg-slate-50 dark:bg-slate-900/50 border-slate-100 dark:border-slate-800'
-                }`}
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full p-5 flex items-center justify-between text-left"
+          <div className="flex flex-col space-y-6">
+            <div className="space-y-3">
+              {t.items.map((item: { q: string; a: string }, i: number) => (
+                <div
+                  key={i}
+                  className={`rounded-xl border transition-colors ${
+                    openFaq === i
+                      ? 'bg-white dark:bg-slate-900 border-blue-200 dark:border-blue-800'
+                      : 'bg-slate-50 dark:bg-slate-900/50 border-slate-100 dark:border-slate-800'
+                  }`}
                 >
-                  <span className="font-semibold text-sm text-slate-900 dark:text-white pr-4">{item.q}</span>
-                  <span className={`material-symbols-outlined text-lg transition-transform duration-200 shrink-0 ${
-                    openFaq === i ? 'rotate-180 text-blue-600' : 'text-slate-400'
-                  }`}>expand_more</span>
+                  <button
+                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                    className="w-full p-5 flex items-center justify-between text-left focus:outline-none"
+                  >
+                    <span className="font-semibold text-sm text-slate-900 dark:text-white pr-4">{item.q}</span>
+                    <span className={`material-symbols-outlined text-lg transition-transform duration-200 shrink-0 ${
+                      openFaq === i ? 'rotate-180 text-blue-600' : 'text-slate-400'
+                    }`}>expand_more</span>
+                  </button>
+                  {openFaq === i && (
+                    <div className="px-5 pb-5">
+                      <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed whitespace-pre-wrap">{item.a}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Reference Link */}
+            {/* Reference Link */}
+            {t.reference && (
+              <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 mt-2">
+                <div className="text-xs text-slate-400 dark:text-slate-500 text-center md:text-left">
+                  {t.reference.split(': ')[0]}:{' '}
+                  <a href={t.reference.split(': ')[1]} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    {t.reference.split(': ')[1]}
+                  </a>
+                </div>
+                <button 
+                  onClick={() => setReferencesModalOpen(true)}
+                  className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider hover:underline flex items-center gap-1 transition-colors bg-blue-50 dark:bg-blue-900/30 px-3 py-1.5 rounded-full whitespace-nowrap"
+                >
+                  <span className="material-symbols-outlined text-[14px]">library_books</span>
+                  {allT.hero.badge === 'Cutting Ties, Keeping Love' ? 'Tingnan Lahat' : 'View All'}
                 </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5">
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{item.a}</p>
-                  </div>
-                )}
               </div>
-            ))}
+            )}
           </div>
 
           {/* Ask a Midwife Chatbot */}
