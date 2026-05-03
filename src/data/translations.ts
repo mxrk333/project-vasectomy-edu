@@ -23,7 +23,7 @@ export const translations = {
         { icon: 'school', text: 'Edukasyong Pangkalusugan: Nais naming itama ang mga maling akala tungkol sa reproductive health ng mga kalalakihan.' },
         { icon: 'support_agent', text: 'Suporta sa Desisyon: Tinutulungan namin kayong makapagpasya nang tama para sa inyong kinabukasan at pamilya.' }
       ],
-      closingStatement: 'Bilang mga hinaharap na healthcare professionals, kami ay katuwang ninyo sa pagtataguyod ng responsableng pagpaplano ng pamilya. Tara, alamin ang katotohanan tungkol sa vasectomy!',
+      closingStatement: 'Bilang mga healthcare professionals sa hinaharap, kami ay katuwang ninyo sa pagtataguyod ng responsableng pagpaplano ng pamilya. Tara, alamin ang katotohanan tungkol sa vasectomy!',
       primaryBtn: 'Alamin Pa',
       secondaryBtn: 'Makipag-ugnayan',
       purpose: {
