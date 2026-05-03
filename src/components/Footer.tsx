@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import logoIcon from '../assets/icon.svg';
 import { useAppContext } from '../context/AppContext';
 
