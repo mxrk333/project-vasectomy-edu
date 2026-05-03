@@ -14,25 +14,69 @@ export const translations = {
     },
     hero: {
       badge: 'Cutting Ties, Keeping Love',
-      title: 'Gabay sa Vasectomy para sa Pamilyang Pilipino',
-      subtitle: 'Libreng impormasyon tungkol sa ligtas, epektibo, at permanenteng family planning para sa mga lalaki.',
+      welcomeLabel: 'Maligayang Pagdating',
+      title: 'Maligayang Pagdating sa Vasectomy Information & Education Website',
+      subtitle: 'Ang platform na ito ay binuo ng mga Nursing students mula sa Olivarez College (3rd Year). Layunin naming magbigay ng malinaw at tamang impormasyon tungkol sa vasectomy bilang isang ligtas at epektibong paraan ng family planning.',
+      trustHeading: 'Bakit dapat kaming pagkatiwalaan?',
+      trustItems: [
+        { icon: 'science', text: 'Siyentipikong Batayan: Lahat ng impormasyon ay base sa pagsasaliksik at medisina.' },
+        { icon: 'school', text: 'Edukasyong Pangkalusugan: Nais naming itama ang mga maling akala tungkol sa reproductive health ng mga kalalakihan.' },
+        { icon: 'support_agent', text: 'Suporta sa Desisyon: Tinutulungan namin kayong makapagpasya nang tama para sa inyong kinabukasan at pamilya.' }
+      ],
+      closingStatement: 'Bilang mga hinaharap na healthcare professionals, kami ay katuwang ninyo sa pagtataguyod ng responsableng pagpaplano ng pamilya. Tara, alamin ang katotohanan tungkol sa vasectomy!',
       primaryBtn: 'Alamin Pa',
       secondaryBtn: 'Makipag-ugnayan'
     },
+    overview: {
+      overviewTitle: 'Overview of Vasectomy Awareness',
+      overviewDesc: 'Ang Website ay nakatuon sa pagpapalawak ng kaalaman ng publiko tungkol sa vasectomy bilang isang ligtas, epektibo, at permanenteng paraan ng kontrasepsyon para sa mga kalalakihan. Sa kabila ng pagiging simple ng outpatient procedure na ito, marami pa ring mga maling akala o misconceptions na nagiging hadlang upang hindi ito piliin ng marami bilang opsyon sa pagpaplano ng pamilya.',
+      missionTitle: 'Mission and Purpose of the Website',
+      missionDesc: 'Layunin naming magbigay ng tumpak at madaling maunawaang kaalaman tungkol sa vasectomy. Nais naming tulungan ang bawat isa na makagawa ng matalinong desisyon para sa kanilang reproductive health at responsableng pagpaplano ng pamilya.',
+      missionSubDesc: 'Ang platform na ito ay binuo ng mga Nursing students (3rd Year) ng Olivarez College upang:',
+      missionItems: [
+        'Magbigay ng tumpak at siyentipikong impormasyon ukol sa vasectomy.',
+        'Linawin ang mga maling akala, takot, at mga mito.',
+        'Hikayatin ang partisipasyon ng mga kalalakihan sa family planning.',
+        'Magsilbing gabay sa matalinong pagpapasya.',
+        'Makapag-ambag sa edukasyong pangkalusugan ng komunidad.'
+      ],
+      missionClosing: 'Sa pamamagitan nito, hangad naming palawakin ang pag-unawa sa vasectomy bilang bahagi ng komprehensibong pangangalaga sa pamilya.'
+    },
     whatis: {
       title: 'Ano ang Vasectomy?',
-      definition: 'Ang vasectomy ay isang simpleng operasyon para sa lalaki na pumipigil sa sperm na makarating sa semen. Ito ay itinuturing na pinaka-epektibong paraan ng permanenteng family planning.',
-      howTitle: 'Paano ito ginagawa?',
-      howDesc: 'Piniputol o tina-tie ang vas deferens — ang tubo na nagdadala ng sperm mula sa testicles. Hindi ito nababago ang hormones, sex drive, o pagkalalaki.',
-      procedureTitle: 'Tungkol sa Procedure',
-      procedureItems: [
-        'Tatagal lamang ng 15–20 minuto',
-        'Ginagawa sa lokal na anesthesia (gising ka)',
-        'No-Scalpel technique — walang tahi',
-        'Pwede nang umuwi pagkatapos'
+      definition: 'Ang vasectomy ay isang simpleng operasyon na nagsisilbing permanenteng paraan ng kontrasepsyon para sa mga lalaki. Layunin nito na pigilan ang pagbubuntis sa pamamagitan ng pagputol o pagharang sa daluyan ng punla (sperm) mula sa mga bayag patungo sa semilya.',
+      typesTitle: 'Mga Uri ng Vasectomy',
+      types: [
+        {
+          name: 'Incision Vasectomy',
+          desc: 'Sa paraang ito, gumagamit ang doktor ng maliit na scalpel upang gumawa ng isa o dalawang hiwa sa balat ng itlog (scrotum). Mula sa mga butas na ito, kukunin ang vas deferens, puputulin, at selyuhan upang hindi na makahalo ang punla sa semilya.'
+        },
+        {
+          name: 'Non-Scalpel Vasectomy',
+          desc: 'Ang teknik na ito ay hindi gumagamit ng scalpel. Sa halip, isang maliit na tusok lamang ang ginagawa gamit ang isang espesyal na instrumento. Dahil napakaliit ng butas, kadalasang hindi na kinakailangan ng tahi, kaya mas mabilis ang paggaling at mas kaunti ang tsansa ng komplikasyon.'
+        }
       ],
-      safetyTitle: 'Gaano ito ka-safe?',
-      safetyDesc: '99.9% effective ayon sa World Health Organization. Isa sa pinakaligtas na contraceptive method sa buong mundo.'
+      howTitle: 'Paano ito Gumagana?',
+      howDesc: 'Ang pamamaraang ito ay nakatuon sa vas deferens, ang mga tubong nagdadala ng punla mula sa mga bayag. Sa isang vasectomy, ang mga tubong ito ay puputulin, seselyuhan, o haharangan. Dahil dito, ang punla ay hindi na makakahalo sa semilya tuwing nilalabasan, kaya mawawala ang tsansa ng pagbubuntis. Bagama\'t patuloy pa rin ang paggawa ng punla sa katawan, ang mga sperm cells ay natural na lamang na sisipsipin at lalarunawin ng katawan.',
+      procedureTitle: 'Pangkalahatang Pagtingin sa Procedure',
+      procedureIntro: 'Ang vasectomy ay karaniwang ginagawa bilang isang outpatient procedure gamit ang local anesthesia. Ang buong proseso ay tumatagal lamang ng 15–20 minuto.',
+      procedureItems: [
+        'Pag-ineksyon ng local anesthesia upang mamanhid ang bahagi ng scrotum.',
+        'Paggawa ng maliit na hiwa o tusok sa balat ng scrotum.',
+        'Pagputol at pagsasara ng vas deferens (pagtali, pag-cauterize, o paggamit ng clips).',
+        'Pagsasara ng hiwa o paghaya na gumaling nang kusa.'
+      ],
+      procedureRecovery: 'Ang mga pasyente ay karaniwang pinapayagan nang umuwi sa mismong araw. Maaaring makaranas ng kaunting hapdi, pamamaga, o pasa na nawawala sa loob ng ilang araw.',
+      safetyTitle: 'Kaligtasan at Bisa',
+      safetyDesc: 'Ang vasectomy ay itinuturing na isang ligtas at low-risk na prosedur. Ang mga komplikasyon ay hindi karaniwan, at kung sakaling magkaroon man, ang mga ito ay banayad lamang at madaling lunasan.',
+      effectivenessTitle: 'Effectiveness',
+      effectivenessDesc: 'Ang vasectomy ay isa sa mga pinaka-epektibong uri ng kontrasepsyon, na may success rate na halos 100%. Gayunpaman, hindi ito agad nagreresulta sa pagiging baog. Kinakailangang gumamit muna ng ibang paraan ng kontrasepsyon hanggang sa makumpirma ng follow-up testing na wala nang sperm sa semilya.',
+      reminders: [
+        'Hindi Agaran: Maaaring kailanganin ang 20+ paglabas bago maging malinis ang semilya.',
+        'Permanente: Siguraduhin ang desisyon dahil ito ay para sa pangmatagalang epekto.',
+        'Ligtas na Pakikipagtalik: Gumamit pa rin ng proteksyon upang maiwasan ang mga STIs.'
+      ],
+      references: 'Pinagmulan: WHO, WebMD, Mayo Clinic, Philippine DOH'
     },
     myths: {
       title: 'Myths vs Facts',
@@ -151,7 +195,7 @@ export const translations = {
       successMsg: 'Salamat sa iyong mensahe. Babalikan ka namin sa lalong madaling panahon.'
     },
     footer: {
-      tagline: 'Tamang kaalaman para sa mas matatag na pamilya.',
+      tagline: 'Planadong Pamilya, Masaganang Bukas Ang Kasama.',
       links: ['Ano ang Vasectomy?', 'Myths vs Facts', 'Mga Benepisyo', 'FAQ', 'Research'],
       copyright: '© 2026 Cutting Ties, Keeping Love. Lahat ng karapatan ay nakalaan.'
     }
@@ -171,25 +215,69 @@ export const translations = {
     },
     hero: {
       badge: 'Cutting Ties, Keeping Love',
-      title: 'A Vasectomy Guide for Filipino Families',
-      subtitle: 'Free, reliable information about a safe, effective, and permanent family planning option for men.',
+      welcomeLabel: 'Welcome',
+      title: 'Welcome to our Vasectomy Information and Education Website',
+      subtitle: 'This platform is developed by third-year Nursing student researchers from Olivarez College, with the aim of providing clear, accurate, and evidence-based information about vasectomy as a method of family planning. Our goal is to promote informed decision-making by presenting essential knowledge on the procedure, its safety, benefits, and common concerns in a respectful and easy-to-understand manner.',
+      trustHeading: 'Why should you trust us?',
+      trustItems: [
+        { icon: 'science', text: 'Evidence-Based: All information is grounded in scientific research and medicine.' },
+        { icon: 'school', text: 'Health Education: We aim to correct misconceptions about men\'s reproductive health.' },
+        { icon: 'support_agent', text: 'Decision Support: We help you make informed choices for your future and your family.' }
+      ],
+      closingStatement: 'As future healthcare professionals, we are committed to advancing public awareness and supporting responsible reproductive health choices through reliable and accessible educational resources. We invite you to explore this site and learn more about vasectomy as part of comprehensive family planning and men\'s reproductive health.',
       primaryBtn: 'Learn More',
       secondaryBtn: 'Contact Us'
     },
+    overview: {
+      overviewTitle: 'Overview of Vasectomy Awareness',
+      overviewDesc: 'Vasectomy awareness focuses on increasing public understanding of vasectomy as a safe, effective, and permanent method of male contraception. Despite being a simple outpatient procedure, vasectomy is often surrounded by misconceptions that may prevent individuals from considering it as a viable family planning option. This website aims to provide factual, evidence-based information to help address myths, clarify concerns, and promote informed reproductive health decisions among individuals and couples.',
+      missionTitle: 'Mission and Purpose of the Website',
+      missionDesc: 'Our mission is to promote accurate knowledge and awareness about vasectomy by providing reliable, accessible, and easy-to-understand educational content. We aim to support individuals in making informed choices regarding their reproductive health while encouraging responsible family planning practices.',
+      missionSubDesc: 'The purpose of this website is to serve as an educational platform created by third-year Nursing student researchers from Olivarez College. It is designed to:',
+      missionItems: [
+        'Provide clear and evidence-based information about vasectomy.',
+        'Address common myths, fears, and misconceptions.',
+        'Promote awareness of male participation in family planning.',
+        'Support informed decision-making in reproductive health.',
+        'Contribute to community health education through academic initiative.'
+      ],
+      missionClosing: 'Through this platform, we hope to enhance understanding and encourage a more informed perspective on vasectomy as part of comprehensive family planning.'
+    },
     whatis: {
       title: 'What is Vasectomy?',
-      definition: 'Vasectomy is a simple surgical procedure for men that prevents sperm from reaching the semen. It is considered the most effective method of permanent family planning.',
-      howTitle: 'How does it work?',
-      howDesc: 'The vas deferens — the tubes that carry sperm from the testicles — are cut or tied. This does not change your hormones, sex drive, or masculinity.',
-      procedureTitle: 'About the Procedure',
-      procedureItems: [
-        'Takes only 15–20 minutes',
-        'Done under local anesthesia (you are awake)',
-        'No-Scalpel technique — no stitches needed',
-        'You can go home right after'
+      definition: 'A vasectomy is a minor surgical procedure performed as a permanent method of male contraception. It is designed to prevent pregnancy by interrupting the transport of sperm from the testes to the semen.',
+      typesTitle: 'Types of Vasectomy',
+      types: [
+        {
+          name: 'Incision Vasectomy',
+          desc: 'This method uses a small surgical scalpel to make one or two cuts in the scrotal skin. Through these openings, the vas deferens is accessed, cut, and sealed to prevent sperm from entering the semen.'
+        },
+        {
+          name: 'Non-Scalpel Vasectomy',
+          desc: 'This technique does not use a scalpel. Instead, a small puncture is made using a specialized instrument, and the opening is gently stretched to reach the vas deferens. Stitches are usually not required, leading to faster healing and fewer complications.'
+        }
       ],
-      safetyTitle: 'How safe is it?',
-      safetyDesc: '99.9% effective according to the World Health Organization. One of the safest contraceptive methods worldwide.'
+      howTitle: 'How Does It Work?',
+      howDesc: 'The procedure involves the vas deferens, the tubes responsible for carrying sperm from the testicles. During a vasectomy, these tubes are cut, sealed, or otherwise blocked. As a result, sperm is prevented from mixing with semen during ejaculation, thereby eliminating the possibility of fertilization. Although sperm production continues, the sperm cells are naturally reabsorbed by the body.',
+      procedureTitle: 'Procedure Overview',
+      procedureIntro: 'A vasectomy is typically conducted as an outpatient procedure under local anesthesia. The process generally takes approximately 15 to 20 minutes.',
+      procedureItems: [
+        'Administration of local anesthesia to numb the scrotal area.',
+        'Creation of a small incision or puncture in the scrotum.',
+        'Cutting and sealing (through ligation, cauterization, or clipping) of the vas deferens.',
+        'Closure of the incision or allowing it to heal naturally.'
+      ],
+      procedureRecovery: 'Patients are usually able to return home the same day, with recovery characterized by minimal discomfort, mild swelling, or bruising that typically resolves within a few days.',
+      safetyTitle: 'Safety and Effectiveness',
+      safetyDesc: 'Vasectomy is considered a safe and low-risk procedure. Complications are uncommon and, when they occur, are generally mild and manageable, such as minor pain, swelling, or infection.',
+      effectivenessTitle: 'Effectiveness',
+      effectivenessDesc: 'Vasectomy is one of the most effective forms of contraception, with a success rate approaching 100% in preventing pregnancy. However, it does not provide immediate sterility. Alternative contraceptive methods should be used until follow-up testing confirms the absence of sperm in the semen.',
+      reminders: [
+        'Not Immediate: 20+ ejaculations may be needed before semen is sperm-free.',
+        'Permanent: Ensure your decision as this is designed for long-term effect.',
+        'Safe Sex: Continue using protection (e.g., condoms) to prevent STIs.'
+      ],
+      references: 'Sources: WHO, WebMD, Mayo Clinic, Philippine DOH'
     },
     myths: {
       title: 'Myths vs Facts',
@@ -308,7 +396,7 @@ export const translations = {
       successMsg: 'Thank you for your message. We will get back to you as soon as possible.'
     },
     footer: {
-      tagline: 'The right knowledge for a stronger family.',
+      tagline: 'Planned Family, A Prosperous Future Together.',
       links: ['What is Vasectomy?', 'Myths vs Facts', 'Benefits', 'FAQ', 'Research'],
       copyright: '© 2026 Cutting Ties, Keeping Love. All rights reserved.'
     }
