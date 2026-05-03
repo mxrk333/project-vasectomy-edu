@@ -9,6 +9,7 @@ import Research from './components/Research';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PwaPrompt from './components/PwaPrompt';
+import ScrollToTop from './components/ScrollToTop';
 import { AppProvider } from './context/AppContext';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         </main>
         <Footer />
         <PwaPrompt />
+        <ScrollToTop />
       </div>
     </AppProvider>
   );
