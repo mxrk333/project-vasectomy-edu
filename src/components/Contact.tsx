@@ -37,7 +37,7 @@ export default function Contact() {
 
         {/* Health Center Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-          {t.locations.map((loc: { name: string; subtitle: string; location: string; fbPage: string; email: string; contactNumber: string }, i: number) => (
+          {t.locations.map((loc: { name: string; subtitle: string; location: string; fbPage: string; email: string | string[]; contactNumber: string }, i: number) => (
             <div key={i} className="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 space-y-4 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center shrink-0">
