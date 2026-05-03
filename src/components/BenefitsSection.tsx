@@ -31,24 +31,22 @@ export default function BenefitsSection() {
             <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">{testimonials.title}</h3>
             <p className="text-slate-600 dark:text-slate-400">{testimonials.subtitle}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {testimonials.stories.map((story, i) => (
-              <div key={i} className="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-100 dark:border-slate-700 space-y-4">
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, s) => (
-                    <span key={s} className="material-symbols-outlined text-yellow-500 text-base">star</span>
-                  ))}
-                </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed italic">"{story.quote}"</p>
-                <div className="flex items-center gap-3 pt-1">
-                  <div className="w-9 h-9 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-lg">person</span>
+          <div className="grid grid-cols-1 gap-6">
+            {testimonials.stories.map((story: { quote: string; name?: string; detail?: string }, i: number) => (
+              <div key={i} className="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 space-y-4 flex flex-col items-center text-center">
+                <span className="material-symbols-outlined text-blue-200 dark:text-blue-900 text-5xl leading-none">format_quote</span>
+                <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed italic">"{story.quote}"</p>
+                {(story.name || story.detail) && (
+                  <div className="flex flex-col items-center gap-2 pt-2">
+                    <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">
+                      <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-lg">{story.name ? 'person' : 'location_on'}</span>
+                    </div>
+                    <div>
+                      {story.name && <p className="font-semibold text-slate-900 dark:text-white text-sm">{story.name}</p>}
+                      {story.detail && <p className="text-xs text-slate-500 dark:text-slate-400">{story.detail}</p>}
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-semibold text-slate-900 dark:text-white text-sm">{story.name}</p>
-                    <p className="text-xs text-slate-400">{story.detail}</p>
-                  </div>
-                </div>
+                )}
               </div>
             ))}
           </div>

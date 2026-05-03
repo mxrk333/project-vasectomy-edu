@@ -166,28 +166,13 @@ export const translations = {
       ]
     },
     testimonials: {
-      title: 'Mga Kwento ng mga Mag-asawa',
-      subtitle: 'Tunay na karanasan mula sa mga pamilyang Pilipino.',
+      title: 'Mga Kwento',
+      subtitle: 'Tunay na karanasan mula sa mga Pilipino.',
       stories: [
         {
-          quote: 'Hindi ko akalaing ganito kapayapa ang pakiramdam pagkatapos. Wala nang alalahanin. Salamat sa doktor at midwife na nagpaliwanag ng maayos.',
-          name: 'Mark at Jenny',
-          detail: 'Married 8 years, 3 kids — Quezon City'
-        },
-        {
-          quote: 'Dati takot ako dahil sa mga naririnig ko. Pero nung nalaman ko ang katotohanan, ako pa ang nag-volunteer. Para sa asawa ko ito.',
-          name: 'Rodel at Maria',
-          detail: 'Married 12 years, 4 kids — Laguna'
-        },
-        {
-          quote: 'Ang bilis lang ng procedure, halos hindi ko naramdaman. Ngayon mas relax kami ng asawa ko.',
-          name: 'Jay at Alma',
-          detail: 'Married 6 years, 2 kids — Cebu'
-        },
-        {
-          quote: 'Pinag-isipan namin ng mabuti bilang mag-asawa. Ito ang pinakamabuting desisyon na nagawa namin para sa pamilya namin.',
-          name: 'Carlo at Bea',
-          detail: 'Married 10 years, 3 kids — Davao'
+          quote: 'Plano ko na talaga magpa-vasectomy noon pa, ngayong isa na ang anak ko gusto kong masecure ang future niya. Sobrang bilis ng procedure, nagdrive at pumasok pa ako sa trabaho after.',
+          name: 'Anonymous',
+          detail: 'Parañaque'
         }
       ]
     },
@@ -481,28 +466,13 @@ export const translations = {
       ]
     },
     testimonials: {
-      title: 'Stories from Couples',
-      subtitle: 'Real experiences from Filipino families.',
+      title: 'Stories',
+      subtitle: 'Real experiences from Filipinos.',
       stories: [
         {
-          quote: 'I didn\'t expect to feel this much peace after. No more worries. Thank you to the doctor and midwife who explained everything clearly.',
-          name: 'Mark & Jenny',
-          detail: 'Married 8 years, 3 kids — Quezon City'
-        },
-        {
-          quote: 'I used to be scared because of what I heard. But when I learned the truth, I volunteered myself. This is for my wife.',
-          name: 'Rodel & Maria',
-          detail: 'Married 12 years, 4 kids — Laguna'
-        },
-        {
-          quote: 'The procedure was so quick, I barely felt anything. Now my wife and I are more relaxed together.',
-          name: 'Jay & Alma',
-          detail: 'Married 6 years, 2 kids — Cebu'
-        },
-        {
-          quote: 'We thought about it carefully as a couple. It was the best decision we ever made for our family.',
-          name: 'Carlo & Bea',
-          detail: 'Married 10 years, 3 kids — Davao'
+          quote: 'I had actually been planning to get a vasectomy for a while now. Now that I have one child, I want to secure his future. The procedure was incredibly quick — I even drove and went to work after.',
+          name: 'Anonymous',
+          detail: 'Parañaque'
         }
       ]
     },
