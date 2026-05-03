@@ -42,7 +42,11 @@ export default function FAQSection() {
       // 2: Recovery
       { tl: ['pahinga', 'gaano katagal'], en: ['how long', 'heal'], shared: ['recovery', 'recover', 'rest'] },
       // 3: Sex
-      { tl: ['makipag-sex', 'kama'], en: ['intercourse', 'drive', 'performance'], shared: ['sex', 'libido'] }
+      { tl: ['makipag-sex', 'kama', 'sex'], en: ['intercourse', 'drive', 'performance'], shared: ['sex', 'libido'] },
+      // 4: Side Effects
+      { tl: ['side effects', 'epekto', 'kumplikasyon', 'impeksyon'], en: ['side effects', 'complications', 'infection', 'swelling'], shared: ['side effect', 'risk'] },
+      // 5: Cost
+      { tl: ['gastos', 'magkano', 'bayad', 'philhealth', 'presyo'], en: ['cost', 'how much', 'price', 'pay'], shared: ['philhealth', 'free', 'discount'] }
     ];
 
     for (let i = 0; i < keywords.length; i++) {

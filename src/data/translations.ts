@@ -210,6 +210,14 @@ export const translations = {
         { 
           q: 'Maaari pa ba akong makipagtalik pagkatapos ng vasectomy?', 
           a: 'Oo, maaaring magpatuloy sa pakikipagtalik kapag magaling na ang mga hiwa, ngunit hindi ito agad-agad. Dapat iwasan ang lahat ng uri ng gawaing sekswal, kabilang ang masturbasyon, sa loob ng hindi bababa sa 7 araw pagkatapos ng operasyon.\n\nGayunpaman, napakahalagang tandaan ang mga sumusunod:\n• Hindi ka agad baog pagkatapos ng vasectomy: Maaaring may matira pang punla (sperm) sa iyong semilya sa loob ng ilang linggo o buwan.\n• Kailangang gumamit ng ibang paraan ng kontrasepsyon: Gumamit muna ng condom o ibang proteksyon hanggang sa makumpirma ng semen analysis na wala na talagang sperm na matatagpuan sa iyong semilya.\n• Walang pagbabago sa karanasan: Kapag nakumpirma nang "clear" ang iyong semilya, ang vasectomy ay hindi makakaapekto sa iyong sexual performance, libido (pagpukaw ng tawag ng laman), ereksyon, o paglabas ng semilya (ejaculation). Ang tanging magbabago ay ang kawalan ng sperm sa iyong semilya.' 
+        },
+        {
+          q: 'Ano ang mga posibleng side effects?',
+          a: 'Ang vasectomy ay napakaligtas. Ang mga karaniwang side effects ay pansamantala at mabilis ding nawawala. Kabilang dito ang bahagyang pamamaga, pamamantal (bruising), o banayad na sakit sa scrotum (bayag) sa unang ilang araw. Ang mas malalang komplikasyon tulad ng impeksyon o matinding pagdurugo ay napakabihira.'
+        },
+        {
+          q: 'Magkano ang gastos sa vasectomy?',
+          a: 'Ang gastos ng vasectomy sa Pilipinas ay maaaring mag-iba mula Php 3,000 hanggang Php 15,000 depende sa klinika o ospital. Sa mga pampublikong pasilidad at paminsan-minsang programang pangkalusugan, maaari itong i-alok ng libre o may malaking diskwento dahil maaari itong sakop ng PhilHealth.'
         }
       ],
       reference: 'Reference: https://my.clevelandclinic.org/health/procedures/4423-vasectomy'
@@ -227,15 +235,56 @@ export const translations = {
       resources: [
         { title: 'Vasectomy Anatomy Poster (PDF)', size: '0.1 MB', downloadName: 'Vasectomy_Anatomy_Poster.pdf' },
         { title: 'DOH Family Planning Clinical Standards (PDF)', size: '8.3 MB', downloadName: 'DOH_Family_Planning_Standards_2014.pdf' }
-      ]
+      ],
+      findings: {
+        sectionTitle: 'Buod ng mga Natuklasan ng Pag-aaral',
+        sectionSubtitle: 'Mga resulta mula sa pananaliksik na isinagawa ng mga Nursing students ng Olivarez College.',
+        summary: 'Natuklasan ng pag-aaral na ang mga middle-aged na lalaki ay may neutral na pananaw sa vasectomy, na may overall Weighted Mean (WM) na 3.14, na nagpapakita na maraming respondents ang hindi pa sigurado o nagdadalawang-isip pa tungkol dito bilang paraan ng family planning.',
+        keyStats: [
+          { value: '49.06%', label: 'Nakarinig na ng Vasectomy' },
+          { value: '3.14', label: 'Overall Perception (WM)' },
+          { value: '3.21', label: 'Knowledge Level (WM)' },
+          { value: '3.22', label: 'Biological Factors (WM)' }
+        ],
+        keyResults: [
+          '49.06% ng mga respondents ang nakarinig na ng vasectomy, habang higit sa kalahati ay hindi pa rin aware o sigurado.',
+          'Ang antas ng kaalaman ay neutral din, na may WM na 3.21, na nagpapakita ng kawalan ng katiyakan tungkol sa prosedur.',
+          'Ang biological factors ang may pinakamataas na impluwensya (WM = 3.22), na nagpapakita na ang takot sa operasyon, side effects, at pisikal na komplikasyon ang pinakamalakas na hadlang.',
+          'Ang social factors ang pangalawa, kung saan ang relihiyon, suporta ng asawa, at opinyon ng pamilya ang lubos na nakaaapekto sa desisyon.',
+          'Ang psychological factors ang pinakamababa, ngunit ang takot sa operasyon, pagsisisi, at anxiety ay naroon pa rin.',
+          'Ang mga istatistikal na pagsusuri (ANOVA at Pearson Correlation) ay nagpakita ng makabuluhang ugnayan sa pagitan ng biopsychosocial factors at pananaw sa vasectomy.'
+        ],
+        keyInfluences: [
+          'Bilang ng mga anak',
+          'Antas ng kaalaman',
+          'Pinagkunan ng kaalaman',
+          'Katayuang pang-ekonomiya',
+          'Relihiyon'
+        ],
+        keyInfluencesTitle: 'Pinakamatinding Impluwensya sa Pananaw',
+        conclusion: 'Bagama\'t legal na ang vasectomy sa Pilipinas, nananatiling mababa ang pagtanggap dahil sa kakulangan ng kamalayan, takot, stigma, at mga paniniwala sa relihiyon. Binibigyang-diin ng mga natuklasan ang pangangailangan ng mas mahusay na health education, maaasahang impormasyon, at suporta ng komunidad upang mapabuti ang pag-unawa at pagtanggap ng mga lalaki sa vasectomy.'
+      }
     },
     contact: {
       title: 'Makipag-ugnayan',
       subtitle: 'May tanong ka ba? Mag-send ng mensahe o bisitahin ang pinakamalapit na health center.',
-      info: [
-        { icon: 'location_on', label: 'Barangay Health Center', value: 'Pumunta sa inyong lokal na health center at magtanong tungkol sa family planning services.' },
-        { icon: 'call', label: 'DOH Hotline', value: '(02) 8651-7800 local 5003-5004' },
-        { icon: 'language', label: 'Online', value: 'doh.gov.ph' }
+      locations: [
+        {
+          name: 'San Isidro Barangay Health Center',
+          subtitle: '(UPS 5, AREA 1)',
+          location: 'Area 1, UPS 5 Subdivision, San Isidro, Parañaque, 1700 Metro Manila',
+          fbPage: 'https://www.facebook.com/share/1WdHfkuy2v/',
+          email: 'sanisidro_hc@yahoo.com',
+          contactNumber: 'To be updated'
+        },
+        {
+          name: 'DKT Philippines Foundation (Inc.)',
+          subtitle: '',
+          location: '80 E. Rodriguez Jr. Ave (C5), Bagumbayan, Quezon City, 1110 Philippines',
+          fbPage: '',
+          email: ['inquiry@dkt.com.ph', 'denise@dktinternational.org'],
+          contactNumber: '+632-5328-5020'
+        }
       ],
       qrTitle: 'QR Code para sa Seminar',
       qrDesc: 'I-scan ito para ma-access ang website sa iyong phone.',
@@ -476,6 +525,14 @@ export const translations = {
         { 
           q: 'Can I still have sex after vasectomy?', 
           a: 'Yes, sexual activity can be resumed after healing, but not immediately. You should avoid all sexual activity, including masturbation, for at least 7 days after the procedure.\n\nHowever, it is very important to note:\n• You are not immediately sterile after vasectomy\n• Sperm may still remain in the semen for weeks to months\n• You must use another form of contraception until a semen analysis confirms there is no sperm present\n• Once cleared, vasectomy does not affect sexual performance, libido, erection, or ejaculation, only the presence of sperm in semen changes.' 
+        },
+        {
+          q: 'What are the possible side effects?',
+          a: 'Vasectomy is a very safe procedure. Common side effects are temporary and resolve quickly. These include mild swelling, bruising, or slight aching in the scrotum during the first few days. More serious complications like infection or severe bleeding are extremely rare.'
+        },
+        {
+          q: 'How much does a vasectomy cost?',
+          a: 'The cost of a vasectomy in the Philippines can range from Php 3,000 to Php 15,000 depending on the clinic or hospital. In public health facilities and occasional outreach programs, it may be offered for free or heavily discounted as it can be covered by PhilHealth.'
         }
       ],
       reference: 'Reference: https://my.clevelandclinic.org/health/procedures/4423-vasectomy'
@@ -493,15 +550,56 @@ export const translations = {
       resources: [
         { title: 'Vasectomy Anatomy Poster (PDF)', size: '0.1 MB', downloadName: 'Vasectomy_Anatomy_Poster.pdf' },
         { title: 'DOH Family Planning Clinical Standards (PDF)', size: '8.3 MB', downloadName: 'DOH_Family_Planning_Standards_2014.pdf' }
-      ]
+      ],
+      findings: {
+        sectionTitle: 'Summary of Research Findings',
+        sectionSubtitle: 'Results from the study conducted by Olivarez College Nursing students.',
+        summary: 'The study found that middle-aged men have a neutral perception toward vasectomy, with an overall Weighted Mean (WM) of 3.14, showing that many respondents are still unsure or undecided about it as a family planning method.',
+        keyStats: [
+          { value: '49.06%', label: 'Heard of Vasectomy' },
+          { value: '3.14', label: 'Overall Perception (WM)' },
+          { value: '3.21', label: 'Knowledge Level (WM)' },
+          { value: '3.22', label: 'Biological Factors (WM)' }
+        ],
+        keyResults: [
+          '49.06% of respondents had heard about vasectomy, while more than half were still unaware or unsure.',
+          'Knowledge level was neutral, with a WM of 3.21, indicating uncertainty about the procedure, especially its effects and benefits.',
+          'Among biopsychosocial factors, biological factors had the highest influence (WM = 3.22), showing that concerns about surgery, side effects, and physical complications were the strongest barriers.',
+          'Social factors ranked second, with religion, partner support, and family opinions strongly affecting decisions.',
+          'Psychological factors ranked lowest, but fear of surgery, regret, and anxiety were still present.',
+          'Statistical tests (ANOVA and Pearson Correlation) showed a significant relationship between biopsychosocial factors and perception toward vasectomy.'
+        ],
+        keyInfluences: [
+          'Number of children',
+          'Level of knowledge',
+          'Source of knowledge',
+          'Economic status',
+          'Religion'
+        ],
+        keyInfluencesTitle: 'Strongest Influences on Perception',
+        conclusion: 'Although vasectomy is legally available in the Philippines, acceptance remains low due to lack of awareness, fear, stigma, and religious beliefs. The findings highlight the need for better health education, reliable information, and community support to improve men\'s understanding and acceptance of vasectomy.'
+      }
     },
     contact: {
       title: 'Contact Us',
       subtitle: 'Have a question? Send us a message or visit your nearest health center.',
-      info: [
-        { icon: 'location_on', label: 'Barangay Health Center', value: 'Visit your local health center and ask about family planning services.' },
-        { icon: 'call', label: 'DOH Hotline', value: '(02) 8651-7800 local 5003-5004' },
-        { icon: 'language', label: 'Online', value: 'doh.gov.ph' }
+      locations: [
+        {
+          name: 'San Isidro Barangay Health Center',
+          subtitle: '(UPS 5, AREA 1)',
+          location: 'Area 1, UPS 5 Subdivision, San Isidro, Parañaque, 1700 Metro Manila',
+          fbPage: 'https://www.facebook.com/share/1WdHfkuy2v/',
+          email: 'sanisidro_hc@yahoo.com',
+          contactNumber: 'To be updated'
+        },
+        {
+          name: 'DKT Philippines Foundation (Inc.)',
+          subtitle: '',
+          location: '80 E. Rodriguez Jr. Ave (C5), Bagumbayan, Quezon City, 1110 Philippines',
+          fbPage: '',
+          email: ['inquiry@dkt.com.ph', 'denise@dktinternational.org'],
+          contactNumber: '+632-5328-5020'
+        }
       ],
       qrTitle: 'QR Code for Seminar',
       qrDesc: 'Scan this to access the website on your phone.',
